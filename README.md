@@ -68,12 +68,6 @@ ST-LINK_gdbserver --version
 - CMake 生成 Ninja 编译脚本
 - 生成编译规则
 
-在cmd中输入以下命令验证安装路径:
-
-`cmake --version`
-
-<img width="296" height="48" alt="image" src="https://github.com/user-attachments/assets/d5c2bf92-bb97-429f-99fd-b81887502fdc" />
-
 **6.[Ninja](https://github.com/ninja-build/ninja/releases)**
 
 > Ninja = 超快的小型编译工具
@@ -81,6 +75,14 @@ ST-LINK_gdbserver --version
 - **Ninja是施工队**
 - 编译程序
 - 执行编译，速度快
+
+在cmd中输入以下命令验证安装路径:
+
+```
+cmake --version
+ninja --version
+```
+<img width="637" height="144" alt="image" src="https://github.com/user-attachments/assets/55da8d33-acb4-4fc9-9563-f08490b041f1" />
 
 ---
 # 第二步-使用STM32CubeMX生成IDE工程文件
