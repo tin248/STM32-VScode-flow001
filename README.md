@@ -6,7 +6,7 @@
   
 # 工具安装
 
-1.[Visual Studio Code](https://code.visualstudio.com) 
+**1.[Visual Studio Code](https://code.visualstudio.com)**
 
  本地安装路径 `D:\software\VScode` 
  
@@ -19,14 +19,14 @@
   - `dan-c-underwood.arm`     :ARM 汇编语法高亮工具
   - `zixuanwang.linkerscript` :GCC 链接脚本语法高亮工具
 
-2.[STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
+**2.[STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)**
 
   本地安装路径 `D:\software\STM32CubeCLT_1.21.0` 
  
  - 命令行工具，涵盖 Ninja 构建系统与 CMake 构建生成器
  - 配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
 
-3.[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+**3.[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)**
 
 本地安装路径 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE` 
 
@@ -36,7 +36,7 @@
 -  `Folder with STM32 SVD files` :包含 STM32 SVD 文件的文件夹
 -  `Drivers for ST-Link` :驱动程序
 
-配置环境变量
+**配置环境变量**
 
 配置名为`Path`的系统变量，具体配置如下：
 
@@ -50,9 +50,11 @@ arm-none-eabi-gcc --version
 STM32_Programmer_CLI --version
 ST-LINK_gdbserver --version
 ```
+<img width="730" height="512" alt="image" src="https://github.com/user-attachments/assets/f1059d06-3f7c-4169-8b30-2da6bebb51a5" />
 
+**4.[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)**
 
-4.[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
+本地安装路径 `D:\software\STM32CubeMX-6.17.0` 
 
 - 图形界面配置工具，生成底层硬件配置文件.ioc,配合STM32CubeIDE使用
 
