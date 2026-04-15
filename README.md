@@ -8,7 +8,7 @@
 
 1. [Visual Studio Code](https://code.visualstudio.com) 
 
- > 本地安装路径 `D:\software\VScode` 
+ 本地安装路径 `D:\software\VScode` 
  
   **相关插件**
   
@@ -21,7 +21,7 @@
 
 2.[STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
 
- **安装路径** `D:\software\STM32CubeCLT_1.21.0` 
+  本地安装路径 `D:\software\STM32CubeCLT_1.21.0` 
  
  - 命令行工具，涵盖 Ninja 构建系统与 CMake 构建生成器
  -  配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
