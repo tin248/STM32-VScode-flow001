@@ -6,11 +6,11 @@
 1.编辑器[Visual Studio Code](https://code.visualstudio.com) 
 >类似于submit,notpad++,txt等编辑工具
  相关插件如下：
-  -ms-vscode.cpptools
-  -ms-vscode.cmake-tools
-  -marus25.cortex-debug
-  -dan-c-underwood.arm
-  -zixuanwang.linkerscript
+  - ms-vscode.cpptools
+  - ms-vscode.cmake-tools
+  - marus25.cortex-debug
+  - dan-c-underwood.arm
+  - zixuanwang.linkerscript
 
 
 
