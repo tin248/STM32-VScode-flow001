@@ -4,11 +4,14 @@
   
   该*repository*主要用于个人学习
   
-# 第一章，工具安装
+# 工具安装
 
 1.[Visual Studio Code](https://code.visualstudio.com) 
+
  **安装路径** `D:\software\VScode` 
+ 
   **相关插件**
+  
   - `ms-vscode.cpptools`      :语法高亮以及C/C++开发的其他核心功能
   - `ms-vscode.cmake-tools`   :CMake核心工具，构建系统生成工具
   - `twxs.cmake`              :CMake语法高亮工具
