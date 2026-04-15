@@ -4,7 +4,7 @@
   
   该*repository*主要用于个人学习
   
-# 工具安装
+# 一,工具安装
 
 1.[Visual Studio Code](https://code.visualstudio.com) 
 
