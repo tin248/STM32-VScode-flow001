@@ -27,4 +27,13 @@
  -  配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
  -  D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE
 
-[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+3.[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+
+
+
+
+
+
+
+
+
