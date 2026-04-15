@@ -10,7 +10,7 @@
   **相关插件如下：**
   
   - ' ms-vscode.cpptools ' : 语法高亮以及C/C++开发的其他核心功能
-  - ms-vscode.cmake-tools : CMake 核心工具，构建系统生成工具
+  - `ms-vscode.cmake-tools` : CMake 核心工具，构建系统生成工具
   - marus25.cortex-debug
   - dan-c-underwood.arm
   - zixuanwang.linkerscript
