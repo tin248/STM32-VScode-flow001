@@ -36,7 +36,7 @@
 -  `Folder with STM32 SVD files` :包含 STM32 SVD 文件的文件夹
 -  `Drivers for ST-Link` :驱动程序
 
-**配置环境变量**
+配置环境变量
 
 配置名为`Path`的系统变量，具体配置如下：
 
@@ -44,9 +44,17 @@
 - ST-Link调试器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.400.202601091506\tools\bin\`
 - 程序烧写工具 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin\`
 
+在cmd中输入以下命令验证路径:
+```
+arm-none-eabi-gcc --version
+STM32_Programmer_CLI --version
+ST-LINK_gdbserver --version
+```
+
+
 4.[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
 
-> 图形配置界面
+- 图形界面配置工具，生成底层硬件配置文件.ioc,配合STM32CubeIDE使用
 
 
 
