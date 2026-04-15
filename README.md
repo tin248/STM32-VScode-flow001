@@ -21,6 +21,8 @@
 
 2.[STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
 
+ **安装路径** `D:\software\STM32CubeCLT_1.21.0` 
+ 
  - 命令行工具，涵盖 Ninja 构建系统与 CMake 构建生成器
  -  配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
  -  D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE
