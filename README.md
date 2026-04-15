@@ -3,7 +3,8 @@
   该*repository*主要用于个人学习
   
 # 工具安装
-1.编辑器[Visual Studio Code](https://code.visualstudio.com)   > 这是一个类似于submit,notpad++,txt的编辑工具
+1.Visual Studio Code
+**下载链接→** [Visual Studio Code](https://code.visualstudio.com)   
   **相关插件如下：**
   - ms-vscode.cpptools
   - ms-vscode.cmake-tools
