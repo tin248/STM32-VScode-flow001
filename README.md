@@ -12,7 +12,7 @@
  
   **相关插件**
   
-  - `ms-vscode.cpptools`      : > 语法高亮以及C/C++开发的其他核心功能
+  - `ms-vscode.cpptools`      :语法高亮以及C/C++开发的其他核心功能
   - `ms-vscode.cmake-tools`   :CMake核心工具，构建系统生成工具
   - `twxs.cmake`              :CMake语法高亮工具
   - `marus25.cortex-debug`    :Cortex-M调试扩展，是从 VSCode 调试 STM32 的必备工具
@@ -37,8 +37,10 @@
 -  `Folder with STM32 SVD files` :包含 STM32 SVD 文件的文件夹
 -  `Drivers for ST-Link` :驱动程序
 
+**配置环境变量**
 
-
+在菜单搜索环境变量，<img width="400" height="79" alt="image" src="https://github.com/user-attachments/assets/87259316-f488-4441-a0a6-444cf54a2cdb" />
+配置名为`Path`的系统变量
 
 
 
