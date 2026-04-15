@@ -12,7 +12,7 @@
  
   **相关插件**
   
-  - `ms-vscode.cpptools`      :> 语法高亮以及C/C++开发的其他核心功能
+  - `ms-vscode.cpptools`      : > 语法高亮以及C/C++开发的其他核心功能
   - `ms-vscode.cmake-tools`   :CMake核心工具，构建系统生成工具
   - `twxs.cmake`              :CMake语法高亮工具
   - `marus25.cortex-debug`    :Cortex-M调试扩展，是从 VSCode 调试 STM32 的必备工具
