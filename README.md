@@ -1,13 +1,15 @@
 # VScode开发STM32基本流程
+
   本文主要参考了*Majerle*的[stm32-cube-cmake-vscode](https://github.com/MaJerle/stm32-cube-cmake-vscode.git)例程
   该*repository*主要用于个人学习
   
 # 工具安装
-1.Visual Studio Code
 
-**下载链接→** [Visual Studio Code](https://code.visualstudio.com)   
+1.[Visual Studio Code](https://code.visualstudio.com) 
+
   **相关插件如下：**
-  - ms-vscode.cpptools
+  
+  - ms-vscode.cpptools        - 啊啊啊
   - ms-vscode.cmake-tools
   - marus25.cortex-debug
   - dan-c-underwood.arm
