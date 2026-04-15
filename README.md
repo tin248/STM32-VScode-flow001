@@ -4,7 +4,7 @@
   
   该仓库主要用于个人学习
   
-## 第一步-工具安装
+# 第一步-工具安装
 
 **1.[Visual Studio Code](https://code.visualstudio.com)**
 
@@ -85,7 +85,7 @@ ninja --version
 <img width="637" height="144" alt="image" src="https://github.com/user-attachments/assets/55da8d33-acb4-4fc9-9563-f08490b041f1" />
 
 ---
-## 第二步-使用STM32CubeMX生成IDE工程文件
+# 第二步-使用STM32CubeMX生成IDE工程文件
 
 **step1:新建工程**
 
@@ -111,9 +111,12 @@ ninja --version
 点击打开项目工程
 <img width="1200" height="600" alt="屏幕截图 2026-04-15 181909" src="https://github.com/user-attachments/assets/91af3a16-2c91-4ef9-88e0-0088a8cf9569" />
 
+选择一个工作空间，然后launch
 <img width="797" height="367" alt="屏幕截图 2026-04-15 182003" src="https://github.com/user-attachments/assets/77e0340a-e466-48f7-89b1-e71f21bba4cc" />
 
-**没有修改的地方保持默认即可**
+# 第三步-使用IDE进行调试
+
+
 
 
 
