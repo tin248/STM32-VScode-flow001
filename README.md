@@ -39,7 +39,7 @@
 
 **配置环境变量**
 
-在菜单搜索环境变量，<img width="400" height="79" alt="image" src="https://github.com/user-attachments/assets/87259316-f488-4441-a0a6-444cf54a2cdb" />
+在菜单搜索环境变量，<img width="400" height="40" alt="image" src="https://github.com/user-attachments/assets/87259316-f488-4441-a0a6-444cf54a2cdb" />
 配置名为`Path`的系统变量
 
 
