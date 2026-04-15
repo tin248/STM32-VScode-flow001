@@ -39,8 +39,11 @@
 
 **配置环境变量**
 
-在菜单搜索环境变量，<img width="400" height="40" alt="image" src="https://github.com/user-attachments/assets/87259316-f488-4441-a0a6-444cf54a2cdb" />
-配置名为`Path`的系统变量
+配置名为`Path`的系统变量，具体配置如下：
+
+- gcc编译器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.win32_1.0.100.202602081740\tools\bin\`
+- ST-Link调试器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.400.202601091506\tools\bin\`
+- 程序烧写工具 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin\`
 
 
 
