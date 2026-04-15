@@ -86,6 +86,18 @@ ninja --version
 
 ---
 # 第二步-使用STM32CubeMX生成IDE工程文件
+---
+**step1:新建工程**
+
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 174911" src="https://github.com/user-attachments/assets/92064d90-e89b-4d35-ad1c-dd2851231aca" />
+
+---
+**step2:芯片选型**
+
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 175345" src="https://github.com/user-attachments/assets/2d58f12b-f053-4039-b048-326c47feed55" />
+
+---
+**step3:引脚配置**
 
 
 
