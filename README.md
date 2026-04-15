@@ -1,12 +1,12 @@
 # VScode开发STM32基本流程
 
-  本文主要参考了*Majerle*的[stm32-cube-cmake-vscode](https://github.com/MaJerle/stm32-cube-cmake-vscode.git)例程
+  本文参考了*Majerle*的[stm32-cube-cmake-vscode](https://github.com/MaJerle/stm32-cube-cmake-vscode.git)例程
   
   该仓库主要用于个人学习
   
 # 第一步-工具安装
 
-**1.[Visual Studio Code](https://code.visualstudio.com)**
+1.[Visual Studio Code](https://code.visualstudio.com)
 
  本地安装路径 `D:\software\VScode` 
  
@@ -60,6 +60,7 @@ ST-LINK_gdbserver --version
 - 图形界面配置工具，生成底层硬件配置文件.ioc,配合STM32CubeIDE使用
 ---
 # 第二步-使用STM32CubeMX生成IDE工程文件
+
 
 
 
