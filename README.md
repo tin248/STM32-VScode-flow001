@@ -6,7 +6,7 @@
   
 # 第一步-工具安装
 
-**1.[Visual Studio Code](https://code.visualstudio.com)**
+## **1.[Visual Studio Code](https://code.visualstudio.com)**
 
  本地安装路径 `D:\software\VScode` 
  
@@ -99,11 +99,32 @@ ninja --version
 ---
 **step3:引脚配置**
 
+本文分别配置了GPIO引脚PB5和PE5，对应底板的2个LED灯，具体情况根据底板原理图判断
 
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 180934" src="https://github.com/user-attachments/assets/0162ebb2-0661-4068-8e49-fda64efb4526" />
 
+---
+**step4:工程管理**
 
+---
+需要将工具链改为STM32CubeIDE
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 181321" src="https://github.com/user-attachments/assets/0e22d281-1eb4-4885-8d67-3ceccce8abdc" />
 
+---
+这里使用的HAL库进行开发，然后点击generate code生成项目工程
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 181609" src="https://github.com/user-attachments/assets/43b2a3fc-22a7-4ccf-9ad8-6e86eb7de2d4" />
 
+---
+点击打开项目工程
+<img width="1200" height="600" alt="屏幕截图 2026-04-15 181909" src="https://github.com/user-attachments/assets/91af3a16-2c91-4ef9-88e0-0088a8cf9569" />
+
+---
+
+<img width="797" height="367" alt="屏幕截图 2026-04-15 182003" src="https://github.com/user-attachments/assets/77e0340a-e466-48f7-89b1-e71f21bba4cc" />
+
+---
+**没有修改的地方保持默认即可**
+---
 
 
 
