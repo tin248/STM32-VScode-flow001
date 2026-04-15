@@ -24,8 +24,7 @@
   本地安装路径 `D:\software\STM32CubeCLT_1.21.0` 
  
  - 命令行工具，涵盖 Ninja 构建系统与 CMake 构建生成器
- -  配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
- -  D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE
+ - 配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
 
 3.[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
 
@@ -45,6 +44,9 @@
 - ST-Link调试器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.400.202601091506\tools\bin\`
 - 程序烧写工具 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin\`
 
+4.[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
+
+> 图形配置界面
 
 
 
