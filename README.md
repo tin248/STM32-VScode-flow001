@@ -6,7 +6,7 @@
   
 # 工具安装
 
-1. [Visual Studio Code](https://code.visualstudio.com) 
+1.[Visual Studio Code](https://code.visualstudio.com) 
 
  本地安装路径 `D:\software\VScode` 
  
@@ -29,6 +29,13 @@
 
 3.[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
 
+本地安装路径 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE` 
+
+- 编译器 `ARM none eabi GCC compiler `
+- 调试器 `ST-LINK GDBServer for debugging`
+- 代码下载工具和驱动程序 `STM32CubeProgrammer tool for code downloading and respective ST-Link drivers`
+- 包含 STM32 SVD 文件的文件夹 `Folder with STM32 SVD files`
+- 驱动程序 `Drivers for ST-Link`
 
 
 
