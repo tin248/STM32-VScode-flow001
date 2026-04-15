@@ -8,7 +8,7 @@
 
 1. [Visual Studio Code](https://code.visualstudio.com) 
 
- **安装路径** `D:\software\VScode` 
+ > 本地安装路径 `D:\software\VScode` 
  
   **相关插件**
   
