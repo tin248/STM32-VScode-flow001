@@ -9,11 +9,12 @@
 
   **相关插件如下：**
   
-  - ' ms-vscode.cpptools ' : 语法高亮以及C/C++开发的其他核心功能
+  - `ms-vscode.cpptools` : 语法高亮以及C/C++开发的其他核心功能
   - `ms-vscode.cmake-tools` : CMake 核心工具，构建系统生成工具
-  - marus25.cortex-debug
-  - dan-c-underwood.arm
-  - zixuanwang.linkerscript
+  - `twxs.cmake` : CMake 语法高亮工具
+  - `marus25.cortex-debug` : Cortex-M 调试扩展，是从 VSCode 调试 STM32 的必备工具
+  - `dan-c-underwood.arm` : ARM 汇编语法高亮工具
+  - `zixuanwang.linkerscript` : GCC 链接脚本语法高亮工具
 
 
 
