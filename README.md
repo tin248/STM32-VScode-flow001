@@ -108,17 +108,115 @@ ninja --version
 这里使用的HAL库进行开发，然后点击generate code生成项目工程
 <img width="1200" height="600" alt="屏幕截图 2026-04-15 181609" src="https://github.com/user-attachments/assets/43b2a3fc-22a7-4ccf-9ad8-6e86eb7de2d4" />
 
-点击打开项目工程
-<img width="1200" height="600" alt="屏幕截图 2026-04-15 181909" src="https://github.com/user-attachments/assets/91af3a16-2c91-4ef9-88e0-0088a8cf9569" />
+然后点击打开所在文件夹即可
 
-选择一个工作空间，然后launch
-<img width="797" height="367" alt="屏幕截图 2026-04-15 182003" src="https://github.com/user-attachments/assets/77e0340a-e466-48f7-89b1-e71f21bba4cc" />
+本地路径为：`E:\VScode\STM32CubeIDE\ding26_4_15`
+
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/a7ab08ba-e4cd-4b99-aa1b-3c5ae3a0e4ad" />
+
 
 # 第三步-使用Visual Studio Code进行调试
 
+VScode开发，实际只需要这几个文件，其他不必要的可以进行裁剪
+<img width="867" height="313" alt="image" src="https://github.com/user-attachments/assets/211173bc-bcb0-4f14-8a3b-a2aa78c12121" />
 
+使用VScode打开路径`E:\VScode\STM32CubeIDE\ding26_4_15`下的项目工程
+<img width="1911" height="1028" alt="image" src="https://github.com/user-attachments/assets/ea351632-6004-4bd6-aefa-18b36082779f" />
 
+**step1:编写gcc-arm-none-eabi.cmake文件**
 
+文件路径:`ding26_4_15/cmake/gcc-arm-none-eabi.cmake`
+```
+# =============================================================================
+# CMake工具链配置文件 - gcc-arm-none-eabi
+# 用于STM32F103ZETx (cortex-m3) 开发
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 步骤1: 定义工具链路径
+#   设置GCC ARM工具链的bin目录路径
+#   【更换芯片时】: 不需要修改，除非工具链安装位置改变
+# -----------------------------------------------------------------------------
+set(CMAKE_TOOLCHAIN_PATH "D:/software/STM32CubeIDE_2.1.1/STM32CubeIDE_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.make.stm32cubef1_2.1.1.202405161235/tools/bin")
+
+# 工具链的父目录，用于查找库文件
+set(CMAKE_FIND_ROOT_PATH "${CMAKE_TOOLCHAIN_PATH}/../")
+
+# -----------------------------------------------------------------------------
+# 步骤2: 指定交叉编译工具链各组件的完整路径
+#   CMake需要知道用什么编译器来编译C/C++/汇编代码
+#   【更换芯片时】: 不需要修改，所有ARM芯片共用同一套工具链
+# -----------------------------------------------------------------------------
+set(CMAKE_C_COMPILER   "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-gcc")      # C编译器
+set(CMAKE_CXX_COMPILER "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-g++")      # C++编译器
+set(CMAKE_ASM_COMPILER "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-gcc")      # 汇编编译器
+set(CMAKE_OBJCOPY      "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-objcopy")  # 生成bin/hex文件
+set(CMAKE_OBJDUMP      "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-objdump")  # 反汇编工具
+set(CMAKE_SIZE         "${CMAKE_TOOLCHAIN_PATH}/arm-none-eabi-size")     # 查看程序大小
+
+# -----------------------------------------------------------------------------
+# 步骤3: 设置CMake目标系统信息
+#   告诉CMake这是交叉编译环境，目标系统是Generic(通用)，处理器是ARM
+#   【更换芯片时】: 不需要修改
+# -----------------------------------------------------------------------------
+set(CMAKE_SYSTEM_NAME Generic)       # 目标系统名称
+set(CMAKE_SYSTEM_PROCESSOR arm)       # 目标处理器架构
+
+# -----------------------------------------------------------------------------
+# 步骤4: 配置库文件搜索模式
+#   NEVER: 不在sysroot下搜索可执行文件
+#   ONLY:  只在sysroot下搜索库文件
+#   【更换芯片时】: 不需要修改
+# -----------------------------------------------------------------------------
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)   # 可执行文件搜索策略
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)    # 库文件搜索策略
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)    # 头文件搜索策略
+
+# -----------------------------------------------------------------------------
+# 步骤5: 设置编译选项（最重要！必须与芯片匹配）
+#   -mthumb       : 使用Thumb指令集（ARM Cortex-M必须）
+#   -mcpu=cortex-m3 : 指定CPU内核类型
+#   -mfloat-abi=soft: 软件浮点运算（F1系列无FPU）
+#
+#   【更换芯片时】: 必须根据芯片内核修改以下内容:
+#     - cortex-m0/m0+: 使用 -mcpu=cortex-m0 或 cortex-m0plus
+#     - cortex-m3    : 使用 -mcpu=cortex-m3
+#     - cortex-m4    : 使用 -mcpu=cortex-m4
+#     - cortex-m7    : 使用 -mcpu=cortex-m7
+#
+#   【关于-mfloat-abi参数】:
+#     - soft  : 纯软件浮点运算（适用于无FPU的芯片，如F1/F0系列）
+#     - softfp: 硬件FPU但用软件传参（兼容性）
+#     - hard  : 硬件FPU用硬件传参（F4/F7/H7等有FPU的芯片）
+#   【关于-mfpu-config】(仅m4/m7等有FPU的芯片需添加):
+#     - -mfpu=fpv4-sp-d16 (F4系列)
+#     - -mfpu=fpv5-d16    (F7/H7系列)
+# -----------------------------------------------------------------------------
+set(CMAKE_C_FLAGS_INIT   "-mthumb -mcpu=cortex-m3 -mfloat-abi=soft")
+set(CMAKE_CXX_FLAGS_INIT "-mthumb -mcpu=cortex-m3 -mfloat-abi=soft")
+set(CMAKE_ASM_FLAGS_INIT "-mthumb -mcpu=cortex-m3 -mfloat-abi=soft")
+
+# -----------------------------------------------------------------------------
+# 步骤6: 设置链接器脚本
+#   -T: 指定链接脚本文件路径
+#   ${CMAKE_SOURCE_DIR} 是项目根目录
+#   【更换芯片时】: 必须更换为对应芯片的链接脚本
+#     例如: STM32F407VGTx_FLASH.ld, STM32F103C8Tx_FLASH.ld 等
+# -----------------------------------------------------------------------------
+set(CMAKE_EXE_LINKER_FLAGS_INIT "-T${CMAKE_SOURCE_DIR}/STM32F103ZETX_FLASH.ld")
+
+# =============================================================================
+# 【总结】更换STM32芯片系列时，需要修改的地方（标记为【必须修改】）
+# =============================================================================
+# | 修改项              | 位置      | F1系列(F103)    | F4系列(F407)示例       |
+# |---------------------|-----------|-----------------|------------------------|
+# | CPU内核参数         | 步骤5     | cortex-m3       | cortex-m4              |
+# | 浮点运算参数        | 步骤5     | soft            | hard                   |
+# | FPU参数             | 步骤5     | 无需添加        | -mfpu=fpv4-sp-d16      |
+# | 链接脚本文件名      | 步骤6     | STM32F103ZETX.. | STM32F407VGTX_FLASH.ld |
+# =============================================================================
+
+```
 
 
 
