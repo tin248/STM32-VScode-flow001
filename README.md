@@ -6,7 +6,7 @@
   
 # 第一步-工具安装
 
-1.[Visual Studio Code](https://code.visualstudio.com)
+**1.[Visual Studio Code](https://code.visualstudio.com)**
 
  本地安装路径 `D:\software\VScode` 
  
@@ -44,7 +44,7 @@
 - ST-Link调试器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.400.202601091506\tools\bin\`
 - 程序烧写工具 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin\`
 
-在cmd中输入以下命令验证路径:
+在cmd中输入以下命令验证安装路径:
 ```
 arm-none-eabi-gcc --version
 STM32_Programmer_CLI --version
@@ -58,6 +58,18 @@ ST-LINK_gdbserver --version
 本地安装路径 `D:\software\STM32CubeMX-6.17.0` 
 
 - 图形界面配置工具，生成底层硬件配置文件.ioc,配合STM32CubeIDE使用
+
+**5.[CMake](https://cmake.org/)**
+
+- CMake = 自动生成 “编译脚本” 的工具
+- 写一个 CMakeLists.txt（告诉它：我有哪些源文件、要生成什么程序、用什么库）
+- CMake 就自动生成对应平台的编译文件
+
+在cmd中输入以下命令验证安装路径: `cmake --version`<img width="296" height="48" alt="image" src="https://github.com/user-attachments/assets/d5c2bf92-bb97-429f-99fd-b81887502fdc" />
+
+**6.[Ninja](https://github.com/ninja-build/ninja/releases)**
+
+
 ---
 # 第二步-使用STM32CubeMX生成IDE工程文件
 
