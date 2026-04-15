@@ -61,14 +61,22 @@ ST-LINK_gdbserver --version
 
 **5.[CMake](https://cmake.org/)**
 
-- CMake = 自动生成 “编译脚本” 的工具
-- 写一个 CMakeLists.txt（告诉它：我有哪些源文件、要生成什么程序、用什么库）
-- CMake 就自动生成对应平台的编译文件
+> CMake = 自动生成 “编译脚本” 的工具
 
-在cmd中输入以下命令验证安装路径: `cmake --version`<img width="296" height="48" alt="image" src="https://github.com/user-attachments/assets/d5c2bf92-bb97-429f-99fd-b81887502fdc" />
+- CMake = 设计师
+- 写一个 CMakeLists.txt
+- CMake 生成 Ninja 编译脚本
+
+在cmd中输入以下命令验证安装路径:
+
+`cmake --version`
+
+<img width="296" height="48" alt="image" src="https://github.com/user-attachments/assets/d5c2bf92-bb97-429f-99fd-b81887502fdc" />
 
 **6.[Ninja](https://github.com/ninja-build/ninja/releases)**
 
+- Ninja = 超快的小型编译工具
+- 
 
 ---
 # 第二步-使用STM32CubeMX生成IDE工程文件
