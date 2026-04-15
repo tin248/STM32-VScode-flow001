@@ -114,7 +114,8 @@ ninja --version
 选择一个工作空间，然后launch
 <img width="797" height="367" alt="屏幕截图 2026-04-15 182003" src="https://github.com/user-attachments/assets/77e0340a-e466-48f7-89b1-e71f21bba4cc" />
 
-# 第三步-使用IDE进行调试
+# 第三步-使用Visual Studio Code进行调试
+
 
 
 
