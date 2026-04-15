@@ -7,7 +7,7 @@
 
 1.[Visual Studio Code](https://code.visualstudio.com) 
 
-  **相关插件如下：**
+  **相关插件**
   
   - `ms-vscode.cpptools`      :语法高亮以及C/C++开发的其他核心功能
   - `ms-vscode.cmake-tools`   :CMake核心工具，构建系统生成工具
@@ -16,6 +16,10 @@
   - `dan-c-underwood.arm`     :ARM 汇编语法高亮工具
   - `zixuanwang.linkerscript` :GCC 链接脚本语法高亮工具
 
+2.[STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
 
+> 命令行工具，涵盖 Ninja 构建系统与 CMake 构建生成器
+> 配合Vscode的开发，自动配置你的构建环境变量(windows,mac,linux)
+> D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE
 
- [STM32CubeCLT](https://www.st.com/en/development-tools/stm32cubeclt.html)
+[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
