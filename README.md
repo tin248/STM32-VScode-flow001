@@ -4,7 +4,7 @@
   
   该仓库主要用于个人学习
   
-# 1.工具安装
+# 第一步，工具安装
 
 **1.[Visual Studio Code](https://code.visualstudio.com)**
 
@@ -58,7 +58,7 @@ ST-LINK_gdbserver --version
 
 - 图形界面配置工具，生成底层硬件配置文件.ioc,配合STM32CubeIDE使用
 ---
-# **2.STM32CubeMX生成IDE工程文件**
+# 第二步，使用STM32CubeMX生成IDE工程文件
 
 
 
