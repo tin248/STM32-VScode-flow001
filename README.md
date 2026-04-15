@@ -6,7 +6,7 @@
   
 # 工具安装
 
-1.[Visual Studio Code](https://code.visualstudio.com) 
+1. [Visual Studio Code](https://code.visualstudio.com) 
 
  **安装路径** `D:\software\VScode` 
  
