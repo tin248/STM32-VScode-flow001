@@ -2,7 +2,7 @@
 
   本文参考了*Majerle*的[stm32-cube-cmake-vscode](https://github.com/MaJerle/stm32-cube-cmake-vscode.git)例程
   
-  该仓库主要用于个人学习
+  该仓库主要用于个人学习，学习交流请联系: `1203366742@qq.com`
   
 # 第一章-工具安装
 
