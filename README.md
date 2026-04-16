@@ -82,6 +82,7 @@ ST-LINK_gdbserver --version
 cmake --version
 ninja --version
 ```
+**请注意:CMake的最低版本限制为3.25.1**
 <img width="637" height="144" alt="image" src="https://github.com/user-attachments/assets/55da8d33-acb4-4fc9-9563-f08490b041f1" />
 
 ---
@@ -358,5 +359,5 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
 # =============================================================================
 ```
 
-
+**step3:编写**
 
