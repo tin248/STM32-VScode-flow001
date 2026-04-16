@@ -4,7 +4,7 @@
   
   该仓库主要用于个人学习
   
-# 第一步-工具安装
+# 第一章-工具安装
 
 **1.[Visual Studio Code](https://code.visualstudio.com)**
 
@@ -44,7 +44,7 @@
 - ST-Link调试器 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.400.202601091506\tools\bin\`
 - 程序烧写工具 `D:\software\STM32CubeIDE_2.1.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_2.2.400.202601091506\tools\bin\`
 
-在cmd中输入以下命令验证安装路径:
+window系统下，在win+R打开的窗口中输入cmd进入命令行，然后输入以下命令验证安装版本信息:
 ```
 arm-none-eabi-gcc --version
 STM32_Programmer_CLI --version
@@ -76,7 +76,7 @@ ST-LINK_gdbserver --version
 - 编译程序
 - 执行编译，速度快
 
-在cmd中输入以下命令验证安装路径:
+验证安装版本信息:
 
 ```
 cmake --version
@@ -85,7 +85,7 @@ ninja --version
 <img width="637" height="144" alt="image" src="https://github.com/user-attachments/assets/55da8d33-acb4-4fc9-9563-f08490b041f1" />
 
 ---
-# 第二步-使用STM32CubeMX生成IDE工程文件
+# 第二章-使用STM32CubeMX生成IDE工程文件
 
 **step1:新建工程**
 
@@ -115,7 +115,7 @@ ninja --version
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/a7ab08ba-e4cd-4b99-aa1b-3c5ae3a0e4ad" />
 
 
-# 第三步-使用Visual Studio Code进行调试
+# 第三章-使用Visual Studio Code进行调试
 
 VScode开发，实际只需要这几个文件，其他不必要的可以进行裁剪
 <img width="867" height="313" alt="image" src="https://github.com/user-attachments/assets/211173bc-bcb0-4f14-8a3b-a2aa78c12121" />
