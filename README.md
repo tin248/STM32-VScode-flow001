@@ -83,6 +83,7 @@ cmake --version
 ninja --version
 ```
 **请注意:CMake的最低版本限制为3.25.1**
+
 <img width="637" height="144" alt="image" src="https://github.com/user-attachments/assets/55da8d33-acb4-4fc9-9563-f08490b041f1" />
 
 ---
@@ -119,7 +120,7 @@ ninja --version
 # 第三章-使用Visual Studio Code进行调试
 
 VScode开发，实际只需要这几个文件，其他不必要的可以进行裁剪
-<img width="867" height="313" alt="image" src="https://github.com/user-attachments/assets/211173bc-bcb0-4f14-8a3b-a2aa78c12121" />
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/211173bc-bcb0-4f14-8a3b-a2aa78c12121" />
 
 使用VScode打开路径`E:\VScode\STM32CubeIDE\ding26_4_15`下的项目工程
 <img width="1911" height="1028" alt="image" src="https://github.com/user-attachments/assets/ea351632-6004-4bd6-aefa-18b36082779f" />
