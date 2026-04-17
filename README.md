@@ -217,7 +217,7 @@ project(ding26_4_15 C ASM)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build/${CMAKE_BUILD_TYPE})
 
 
-# 步骤4: 收集所有源文件路径(需要修改，很麻烦，后面记得搞个自动化脚本，自动读取IDE的配置文件，然后自己写CMakeLists.txt)
+# 步骤4: 收集所有源文件路径(需要修改，很麻烦，后面记得搞个自动化脚本，自动读取IDE的配置文件，然后自动生成CMakeLists.txt)
 set(SOURCES
     # --- 应用程序代码 (Core层) ---
     Core/Src/main.c                 # 主程序入口
@@ -290,23 +290,51 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
     COMMENT "Building binary and hex files..."
 )
 
-# =============================================================================
-# 【补充说明】
-# =============================================================================
-# 1. 如何添加新的源文件？
-#    在SOURCES列表中添加即可，如: Core/Src/my_driver.c
-#
-# 2. 如何添加新的HAL驱动？
-#    在Drivers/STM32F1xx_HAL_Driver/Src/目录下找到对应的.c文件并添加
-#    常用驱动: stm32f1xx_hal_tim.c, stm32f1xx_hal_uart.c, stm32f1xx_hal_spi.c 等
-#
-# 3. 如何更换芯片型号？
-#    需要修改以下内容:
-#      - gcc-arm-none-eabi.cmake: CPU内核、链接脚本
-#      - CMakeLists.txt: DEFINES中的芯片型号定义
-#      - 启动文件: startup_stm32f103zetx.s
-# =============================================================================
 ```
 
 **step3:编写CMakePresets.json**
+- Debug	调试版本，含调试信息
+- RelWithDebInfo	发行版，含调试信息
+- Release	发行版，优化代码大小
+- MinSizeRel	最小体积版本
+```
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Debug",
+            "binaryDir": "${sourceDir}/build/Debug",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "RelWithDebInfo",
+            "binaryDir": "${sourceDir}/build/RelWithDebInfo",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+            }
+        },
+        {
+            "name": "Release",
+            "binaryDir": "${sourceDir}/build/Release",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "MinSizeRel",
+            "binaryDir": "${sourceDir}/build/MinSizeRel",
+            "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "MinSizeRel"
+            }
+        }
+    ]
+}
+
+```
 
