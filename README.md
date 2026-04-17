@@ -338,3 +338,25 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
 
 ```
 
+**在IDE中可以快速复制文件路径**
+
+头文件路径
+<img width="1809" height="1023" alt="image" src="https://github.com/user-attachments/assets/f6f1d883-1dd9-4638-b500-b5d15541ec10" />
+
+预设宏
+<img width="989" height="1011" alt="image" src="https://github.com/user-attachments/assets/c7a3987c-7b83-40f7-8188-ebecb3680bb1" />
+
+内核信息
+<img width="1001" height="1012" alt="image" src="https://github.com/user-attachments/assets/63414b08-8e43-455e-be55-47e90658867b" />
+
+
+
+
+
+
+
+
+
+
+
+
